@@ -1,0 +1,383 @@
+    @charset "utf-8";
+    /* CSS Document */
+    
+    * {
+        font-family: "楷体"
+    }
+    
+    body,
+    h1,
+    ul {
+        margin: 0;
+        padding: 0
+    }
+    
+    ul {
+        list-style: outside none none;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+  /*头部*/     
+ #head {
+        height: 70px;
+        margin: 0 auto;
+    }
+.navbar{
+     min-height: 70px!important;
+     margin-bottom: 0!important;
+}
+.navbar-nav > li > a {
+    font-size: 18px;
+    padding-top: 25px!important;
+padding-bottom: 25px!important;
+}  
+/*第一页*/
+    .sectionContent1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 100%;
+        align-content:center 
+    } 
+    .self_message {
+        margin-top:160px;
+    }
+    /*第二页*/
+    .sectionContent2,
+    .sectionContent3 {
+        padding-top: 70px;
+        height: 100%;
+        width:100%;
+        box-sizing: border-box
+    }
+    .bar {
+        border-radius: 4px;
+        height: 30px;
+        line-height: 30px;
+        width:70%;
+        margin-top: 40px;
+        margin-left: 50px;
+        background-color: #14c3a2;
+        background-size: 600px 100%;
+        border-bottom: 5px solid #0d7e68;
+        background-image: repeating-linear-gradient(-45deg, #14c3a2, #14c3a2 30px, #22e8c3 30px, #22e8c3 60px);
+        animation: barberpole 12s linear infinite;
+        -webkit-animation: barberpole 12s linear infinite;
+        -moz-animation: barberpole 12s linear infinite;
+        -o-animation: barberpole 12s linear infinite;
+        color: #fff;
+        padding-left: 20px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .skill {
+        margin:auto;
+        height: 100px;
+        text-align: center 
+
+    }
+    .skill p {
+        font-size: 44px;
+        color: #CCC;
+    }
+    .overline {
+        color: #ccc;
+        font-size: 14px;
+    }
+  /*  第三页*/
+    .hobby_content {
+        width: 1000px;
+        margin:auto!important;
+        top: 50px
+    }
+   
+        .hobby_content li {
+        width: 280px;
+        height: 430px;
+        margin-left: 30px;
+        margin-top: 20px;
+        background: rgba(56, 56, 56, 0.5);
+    }
+    
+    .hobby_img {
+        position: absolute;
+        top: 90px;
+margin-left: 102px;
+        color: #fff;
+        font-size: 18px;
+    }
+    
+    .hobby_img_info {
+        position: absolute;
+        top: 10px;
+        margin-left: 35px;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        border: 1px solid #000;
+        background: rgba(0, 0, 0);
+        opacity: 0;
+    }
+   
+    .wrapBox,
+    .box {
+        width: 100%;
+    } 
+    
+    .cycle_item {
+        background: url('icon/cycle.svg') no-repeat;
+        width:400px;
+        max-height:600px;
+        align-self:center
+    }
+    
+    .green_cycle {
+        width: 260px;
+        height: 260px;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+    
+    .yellow_cycle {
+        width: 240px;
+        height: 240px;
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+    
+    .blue_cycle {
+        width: 220px;
+        height: 220px;
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+    
+    .head_img {
+        width: 200px;
+        height: 200px;
+        margin-top: 7px;
+        border-radius: 50%;
+    }
+    
+    .cycle_item span {
+        position: absolute;
+        display: block;
+        background: #FAB4AC;
+        border-radius: 25px;
+        width: 120px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        z-index: 2;
+        font-size: 18px;
+        color: #FFF;
+    }
+    
+    .cycle_item>a>span>p {
+        text-align: center;
+    }
+    
+    .self_a {
+        margin-left: -30px;
+        margin-top: 50px;
+    }
+    
+    .self_message>p {
+        animation: message;
+        animation-duration: 2s;
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 20px;
+        color: #FFF;
+        text-align: center
+    }
+    
+    
+    .blog_a {
+        margin-left: 350px;
+        margin-top: 200px;
+    }
+    
+    .github_a {
+        margin-left: 30px;
+        margin-top: 330px;
+    }
+    
+    .green_cycle {
+        padding-top: 3.2em;
+    }
+    
+    .green_cycle_img,
+    .yellow_cycle_img,
+    .blue_cycle_img,
+    .head_img {
+        position: absolute;
+    }
+    
+    
+    .overline p {
+        line-height: 18px;
+        font-size: 18px;
+    }
+        
+    .spinner {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        border-radius: 50%;
+        -webkit-transition: all 0.8s ease-in-out;
+        -moz-transition: all 0.8s ease-in-out;
+        transition: all 0.8s ease-in-out;
+        filter: alpha(opacity=80);
+        border: 10px solid #14c3a2;
+        border-right-color: #22e8c3;
+        border-bottom-color: #22e8c3;
+    }    
+    .hobby_img_info:hover {
+        opacity: 1;
+    }
+    
+    .hobby_img:hover {
+        opacity: 0;
+    }
+    
+    .hobby_img_div:hover .spinner {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+    }
+    
+    .hobby_img_info h1 {
+        line-height: 30px;
+        text-align: center;
+        margin-top: 30px;
+        color: #ffffff;
+        font-size: 30px
+    }
+    
+    .hobby_content li p {
+        width: 200px;
+        margin-top: 40px;
+        margin-left: 30px;
+        color: #ffffff;
+    }
+    
+    .hobby_img_info h2 {
+        margin-top: 30px;
+        font-size: 16px;
+        text-align: center;
+        color: #ffffff;
+    }
+    
+    
+/*脚部*/
+    footer {
+        margin-top:30px;
+        height: 50px;
+        width: 100%;
+    }
+    
+    footer ul {
+        width: 70%;
+        margin: 0 auto!important;
+    }
+    
+    footer ul li {
+        height: 30px;
+        line-height: 30px;
+        color: #fff;
+        font-size: 24px;
+    }
+    footer ul li:hover{
+  cursor: pointer;
+    }
+    footer ul li a{
+        color: #fff
+    }
+    footer ul li img {
+        width: 20px;
+        height: 20px;      
+    }  
+  /*  动画效果*/
+    .green_cycle_img,
+    .yellow_cycle_img,
+    .blue_cycle_img {
+        animation-name: clockwise;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+    }
+    
+    @keyframes clockwise {
+        from {
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+        }
+        to {
+            -webkit-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+        }
+    }
+    
+    @-webkit-keyframes clockwise {
+        from {
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+        }
+        to {
+            -webkit-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+        }
+    }
+        @keyframes barberpole {
+        from {
+            background-position: 0% 0%;
+        }
+        to {
+            background-position: 600px 0%;
+        }
+    }
+    
+    @-webkit-keyframes barberpole {
+        from {
+            background-position: 0% 0%;
+        }
+        to {
+            background-position: 600px 0%;
+        }
+    }
+        @keyframes message {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 0.5;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    @-webkit-keyframes message {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 0.5;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
