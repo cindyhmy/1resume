@@ -19,146 +19,52 @@
     a {
         text-decoration: none;
     }
-  /*头部*/     
- #head {
+    /*头部*/
+    
+    #head {
         height: 70px;
         margin: 0 auto;
     }
-.navbar{
-     min-height: 70px!important;
-     margin-bottom: 0!important;
-}
-.navbar-nav > li > a {
-    font-size: 18px;
-    padding-top: 25px!important;
-padding-bottom: 25px!important;
-}  
-/*第一页*/
+    
+    .navbar {
+        min-height: 70px!important;
+        margin-bottom: 0!important;
+    }
+    
+    .navbar-nav>li>a {
+        font-size: 18px;
+        padding-top: 25px!important;
+        padding-bottom: 25px!important;
+    }
+    /*第一页*/
+    
     .sectionContent1 {
+        padding-top: 70px;
         display: flex;
         flex-direction: row;
         justify-content: center;
         height: 100%;
-        align-content:center 
-    } 
+        align-content: center
+    }
+    
     .self_message {
-        margin-top:160px;
+        margin-top: 30px;
     }
-    /*第二页*/
-    .sectionContent2,
-    .sectionContent3 {
-        padding-top: 70px;
-        height: 100%;
-        width:100%;
-        box-sizing: border-box
-    }
-    .bar {
-        border-radius: 4px;
-        height: 30px;
-        line-height: 30px;
-        width:70%;
-        margin-top: 40px;
-        margin-left: 50px;
-        background-color: #14c3a2;
-        background-size: 600px 100%;
-        border-bottom: 5px solid #0d7e68;
-        background-image: repeating-linear-gradient(-45deg, #14c3a2, #14c3a2 30px, #22e8c3 30px, #22e8c3 60px);
-        animation: barberpole 12s linear infinite;
-        -webkit-animation: barberpole 12s linear infinite;
-        -moz-animation: barberpole 12s linear infinite;
-        -o-animation: barberpole 12s linear infinite;
-        color: #fff;
-        padding-left: 20px;
-        font-size: 18px;
-        font-weight: bold;
-    }
-    .skill {
-        margin:auto;
-        height: 100px;
-        text-align: center 
-
-    }
-    .skill p {
-        font-size: 44px;
-        color: #CCC;
-    }
-    .overline {
-        color: #ccc;
-        font-size: 14px;
-    }
-  /*  第三页*/
-    .hobby_content {
-        width: 1000px;
-        margin:auto!important;
-        top: 50px
-    }
-   
-        .hobby_content li {
-        width: 280px;
-        height: 430px;
-        margin-left: 30px;
-        margin-top: 20px;
-        background: rgba(56, 56, 56, 0.5);
-    }
-    
-    .hobby_img {
-        position: absolute;
-        top: 90px;
-margin-left: 102px;
-        color: #fff;
-        font-size: 18px;
-    }
-    
-    .hobby_img_info {
-        position: absolute;
-        top: 10px;
-        margin-left: 35px;
-        width: 180px;
-        height: 180px;
-        border-radius: 50%;
-        border: 1px solid #000;
-        background: rgba(0, 0, 0);
-        opacity: 0;
-    }
-   
-    .wrapBox,
-    .box {
-        width: 100%;
-    } 
     
     .cycle_item {
-        background: url('icon/cycle.svg') no-repeat;
-        width:400px;
-        max-height:600px;
-        align-self:center
-    }
-    
-    .green_cycle {
-        width: 260px;
-        height: 260px;
-        margin: 0 auto;
-        padding-bottom: 20px;
-    }
-    
-    .yellow_cycle {
-        width: 240px;
-        height: 240px;
-        margin: 0 auto;
-        padding-top: 10px;
-    }
-    
-    .blue_cycle {
-        width: 220px;
-        height: 220px;
-        margin: 0 auto;
-        padding-top: 10px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column
     }
     
     .head_img {
         width: 200px;
         height: 200px;
-        margin-top: 7px;
+        margin: 0 auto;
         border-radius: 50%;
+        position: relative;
     }
     
     .cycle_item span {
@@ -194,38 +100,155 @@ margin-left: 102px;
         text-align: center
     }
     
-    
-    .blog_a {
-        margin-left: 350px;
-        margin-top: 200px;
+    .school {
+        top: -40px;
     }
     
-    .github_a {
-        margin-left: 30px;
-        margin-top: 330px;
+    .professional {
+        right: -60px;
+        bottom: 70px;
     }
     
-    .green_cycle {
-        padding-top: 3.2em;
+    .name {
+        left: -60px;
+        bottom: 20px;
+    }
+    /*第二页*/
+    
+    .sectionContent2 {
+        padding-top: 70px;
+        height: 100%;
+        width: 100%;
     }
     
-    .green_cycle_img,
-    .yellow_cycle_img,
-    .blue_cycle_img,
-    .head_img {
+    .sectionContent2>div {
+        padding: 10px 50px;
+    }
+    
+    .sectionContent2.row,
+    .sectionContent2 .row {
+        margin: 0!important;
+    }
+    
+    .bar {
+        border-radius: 4px;
+        height: 30px;
+        line-height: 30px;
+        /*        width:70%;*/
+        margin-top: 40px;
+        margin-left: 50px;
+        background-color: #14c3a2;
+        background-size: 600px 100%;
+        border-bottom: 5px solid #0d7e68;
+        background-image: repeating-linear-gradient(-45deg, #14c3a2, #14c3a2 30px, #22e8c3 30px, #22e8c3 60px);
+        animation: barberpole 12s linear infinite;
+        -webkit-animation: barberpole 12s linear infinite;
+        -moz-animation: barberpole 12s linear infinite;
+        -o-animation: barberpole 12s linear infinite;
+        color: #fff;
+        padding-left: 20px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    .skill {
+        margin: auto;
+        text-align: center
+    }
+    
+    .skill p {
+        font-size: 44px;
+        color: #CCC;
+    }
+    
+    .overline {
+        color: #ccc;
+        font-size: 14px;
+    }
+    /*  第三页*/
+    
+    .hobby_content {
+        max-width: 1000px;
+        margin: auto!important;
+        top: 50px
+    }
+    
+    .sectionContent3,
+    .sectionContent4 {
+        padding-top: 70px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        align-content: center
+    }
+    
+    .hobby_img {
         position: absolute;
+        top: 90px;
+        margin-left: 102px;
+        color: #fff;
+        font-size: 18px;
     }
     
+    .hobby_img_div {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        background: rgba(55, 55, 55, 0.5);
+        border: 2px solid #5387CB;
+        border-radius: 5px;
+        box-shadow: 0 0 5px #5387CB
+    }
+    
+    .hobby_content li {
+        margin-bottom: 10px;
+    }
+    /*第四页*/
+    
+    .express {
+        width: 90%;
+        height: 300px;
+        max-width: 1000px;
+        background: rgba(55, 55, 55, 0.5);
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .express h1 {
+        color: #5CC396;
+    }
+    
+    .expressYear {
+        color: #DEDEDE;
+        font-size: 20px;
+    }
+    
+    .expressJob {
+        color: #DEDEDE;
+        font-size: 18px;
+    }
+    
+    .expressMessage {
+        color: #DEDEDE;
+        font-size: 16px;
+    }
+    
+    .wrapBox,
+    .box {
+        width: 100%;
+    }
     
     .overline p {
         line-height: 18px;
         font-size: 18px;
     }
-        
+    
     .spinner {
-        width: 200px;
-        height: 200px;
-        margin: 0 auto;
+        height: 0;
+        padding-bottom: 100%;
+        width: 100%;
         border-radius: 50%;
         -webkit-transition: all 0.8s ease-in-out;
         -moz-transition: all 0.8s ease-in-out;
@@ -234,13 +257,6 @@ margin-left: 102px;
         border: 10px solid #14c3a2;
         border-right-color: #22e8c3;
         border-bottom-color: #22e8c3;
-    }    
-    .hobby_img_info:hover {
-        opacity: 1;
-    }
-    
-    .hobby_img:hover {
-        opacity: 0;
     }
     
     .hobby_img_div:hover .spinner {
@@ -258,10 +274,15 @@ margin-left: 102px;
         font-size: 30px
     }
     
+    .hobby_img_div a {
+        width: 80px;
+        display: block;
+        font-size: 16px;
+        margin: 0 auto;
+    }
+    
     .hobby_content li p {
-        width: 200px;
-        margin-top: 40px;
-        margin-left: 30px;
+        width: 100%;
         color: #ffffff;
     }
     
@@ -271,17 +292,17 @@ margin-left: 102px;
         text-align: center;
         color: #ffffff;
     }
+    /*脚部*/
     
-    
-/*脚部*/
     footer {
-        margin-top:30px;
+        margin-top: 30px;
         height: 50px;
         width: 100%;
     }
     
     footer ul {
-        width: 70%;
+        max-width: 1000px;
+        text-align: center;
         margin: 0 auto!important;
     }
     
@@ -291,17 +312,21 @@ margin-left: 102px;
         color: #fff;
         font-size: 24px;
     }
-    footer ul li:hover{
-  cursor: pointer;
+    
+    footer ul li:hover {
+        cursor: pointer;
     }
-    footer ul li a{
+    
+    footer ul li a {
         color: #fff
     }
+    
     footer ul li img {
         width: 20px;
-        height: 20px;      
-    }  
-  /*  动画效果*/
+        height: 20px;
+    }
+    /*  动画效果*/
+    
     .green_cycle_img,
     .yellow_cycle_img,
     .blue_cycle_img {
@@ -341,7 +366,8 @@ margin-left: 102px;
             -o-transform: rotate(360deg);
         }
     }
-        @keyframes barberpole {
+    
+    @keyframes barberpole {
         from {
             background-position: 0% 0%;
         }
@@ -358,7 +384,8 @@ margin-left: 102px;
             background-position: 600px 0%;
         }
     }
-        @keyframes message {
+    
+    @keyframes message {
         0% {
             opacity: 0;
         }
@@ -379,5 +406,36 @@ margin-left: 102px;
         }
         100% {
             opacity: 1;
+        }
+    }
+    
+    @media (max-width: 576px) {
+        .self_message>p {
+            font-size: 18px;
+        }
+        .sectionContent2>div {
+            padding: 10px;
+        }
+        .bar {
+            margin-top: 10px;
+            width: 45%;
+            float: left;
+            margin-left: 2.5%;
+        }
+        .skill p {
+            font-size: 20px;
+        }
+        .overline p {
+            line-height: 18px;
+            font-size: 14px;
+        }
+        .hobby_img_info h1 {
+            font-size: 20px;
+        }
+        .hobby_content li p {
+            display: none
+        }
+        footer ul li {
+            font-size: 16px!important;
         }
     }
