@@ -284,7 +284,7 @@
     .hobby_content li p {
         width: 100%;
         color: #ffffff;
-        font-size:12px;
+        font-size:14px!important;
     }
     
     .hobby_img_info h2 {
